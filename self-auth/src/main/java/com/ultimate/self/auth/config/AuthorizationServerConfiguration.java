@@ -6,7 +6,6 @@ import com.ultimate.self.auth.support.handler.SelfAuthenticationFailureEventHand
 import com.ultimate.self.auth.support.handler.SelfAuthenticationSuccessEventHandler;
 //import com.ultimate.self.auth.support.password.OAuth2ResourceOwnerPasswordAuthenticationProvider;
 import com.ultimate.self.common.core.config.CommonConstantsConfig;
-import com.ultimate.self.common.security.service.SfaRedisOAuth2AuthorizationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

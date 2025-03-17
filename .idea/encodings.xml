@@ -7,14 +7,14 @@
     <file url="file://$PROJECT_DIR$/self-common/self-common-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-data/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-data/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/self-common/self-common-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/self-common/self-common-feign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-swagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/self-common-swagger/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/self-common/sfa-common-feign/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/self-common/sfa-common-feign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/self-eureka/src/main/java" charset="UTF-8" />
