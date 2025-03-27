@@ -36,7 +36,7 @@ public class AuthorizationServerConfiguration {
                 new OAuth2AuthorizationServerConfigurer();
         DefaultSecurityFilterChain securityFilterChain = httpSecurity.authorizeHttpRequests(authorizeRequests -> {
                     //自定义接口，端点暴露
-                    authorizeRequests.requestMatchers("/token/**", "/actuator/**", "/css/**", "/error").permitAll();
+                    authorizeRequests.antMatchers("/token/**", "/actuator/**", "/css/**", "/error").permitAll();
                     authorizeRequests.anyRequest().authenticated();
                 }).formLogin().and().build();
 

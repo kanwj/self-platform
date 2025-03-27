@@ -5,16 +5,16 @@ spring:
     name: zuul-server
   cloud:
     nacos:
-      username: nacos
-      password: nacos
+      #username: nacos
+      #password: nacos
       discovery:
         server-addr: 127.0.0.1:8848
         #server-addr: ${NACOS_HOST:sfa-register}:${NACOS_PORT:8848}
-        namespace: 7ac2d503-a1a2-4099-b6c3-92d06ad1a3e6
+        namespace: 99ee4cc1-6b73-4715-b9bf-c0225bc109d4
         group: DEFAULT_GROUP
       config:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
-        namespace: 7ac2d503-a1a2-4099-b6c3-92d06ad1a3e6
+        namespace: 99ee4cc1-6b73-4715-b9bf-c0225bc109d4
         file-extension: yml
         group: DEFAULT_GROUP
   config:

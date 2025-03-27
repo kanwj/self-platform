@@ -1,8 +1,7 @@
-package com.ultimate.zuul;
+package com.ultimate.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * 描述：zuul网关
@@ -10,9 +9,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * 日期：2025/2/12 10:10
  */
 @SpringBootApplication
-@EnableZuulProxy
-public class ZuulApplication {
+public class GatewayApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ZuulApplication.class);
+        SpringApplication.run(GatewayApplication.class);
     }
 }

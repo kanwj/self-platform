@@ -17,6 +17,7 @@
         <module>self-org</module>
         <module>self-eureka</module>
         <module>self-zuul</module>
+        <module>self-gateway</module>
     </modules>
 
     <properties>
@@ -44,6 +45,11 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool-all.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.75</version>
         </dependency>
     </dependencies>
 
