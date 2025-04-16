@@ -1,12 +1,12 @@
 server:
-  port: 3000
+  port: 2000
 spring:
   application:
     name: self-auth
   main:
     allow-bean-definition-overriding: true
   redis:
-    host: 172.245.72.171 # 地址
+    host: 104.168.123.154 # 地址
     port: 6379 # 端口
     database: 0 # 数据库索引
   security:
@@ -27,4 +27,4 @@ spring:
   config:
     import:
       - optional:nacos:application-${spring.cloud.nacos.config.namespace}.yml
-      - optional:nacos:${spring.application.name}-${spring.cloud.nacos.config.namespace}.yml
+      - optional:nacos:${spring.application.name}-dev.yml

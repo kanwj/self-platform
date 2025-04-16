@@ -25,7 +25,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class AuthorizationServerConfiguration {
 
-    private final OAuth2AuthorizationService authorizationService;
+    //private final OAuth2AuthorizationService authorizationService;
 
     @Autowired
     private CommonConstantsConfig commonConstantsConfig;
