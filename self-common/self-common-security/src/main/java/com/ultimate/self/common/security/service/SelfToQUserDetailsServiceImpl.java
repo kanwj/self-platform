@@ -59,7 +59,7 @@ public class SelfToQUserDetailsServiceImpl implements SelfUserDetailsService {
 					.createAuthorityList(dbAuthsSet.toArray(new String[0]));
 			User user = userInfo.getUser();
 			// 构造sfa用户
-			return new SfaUser(user.getId(),user.getUsername(), 1L, user.getMobile(),
+			return new LoginUser(user.getId(),user.getUsername(), 1L, user.getMobile(),
 					"Avatar", "nikename", userInfo.getUser().getName(), "Email"
 					, 1L,user.getPassword(), true, true,
 					"userType",true, true, authorities,user.getSalt(),
@@ -70,9 +70,9 @@ public class SelfToQUserDetailsServiceImpl implements SelfUserDetailsService {
 
 	// check-token 使用
 	@Override
-	public UserDetails loadUserByUser(SfaUser sfaUser) {
-		// 根据 SfaUser 里面的信息 查询对应表 返回 UserDetails,  根据实际情况修改
-		return this.loadUserByUsername(sfaUser.getUsername());
+	public UserDetails loadUserByUser(LoginUser loginUser) {
+		// 根据 LoginUser 里面的信息 查询对应表 返回 UserDetails,  根据实际情况修改
+		return this.loadUserByUsername(loginUser.getUsername());
 	}
 
 

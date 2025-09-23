@@ -1,4 +1,4 @@
-package com.ultimate.self.common.security.util;
+package com.ultimate.self.common.security.core.util;
 
 /**
  * @author jumuning

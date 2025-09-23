@@ -36,7 +36,7 @@ import java.util.*;
  * @author sfa
  * @date 2020/4/16 扩展用户信息
  */
-public class SfaUser extends User implements OAuth2AuthenticatedPrincipal, Serializable {
+public class LoginUser extends User implements OAuth2AuthenticatedPrincipal, Serializable {
 
 	private static final long serialVersionUID = SpringSecurityCoreVersion.SERIAL_VERSION_UID;
 
@@ -184,22 +184,22 @@ public class SfaUser extends User implements OAuth2AuthenticatedPrincipal, Seria
 	 * a parameter or as an element in the <code>GrantedAuthority</code> collection
 	 */
 	@JsonCreator
-	public SfaUser(@JsonProperty("id") Long id, @JsonProperty("username") String username,
-                   @JsonProperty("deptId") Long deptId, @JsonProperty("phone") String phone,
-                   @JsonProperty("avatar") String avatar, @JsonProperty("nickname") String nickname,
-                   @JsonProperty("name") String name, @JsonProperty("email") String email,
-                   @JsonProperty("tenantId") Long tenantId, @JsonProperty("password") String password,
-                   @JsonProperty("enabled") boolean enabled, @JsonProperty("accountNonExpired") boolean accountNonExpired,
-                   @JsonProperty("userType") String userType,
-                   @JsonProperty("credentialsNonExpired") boolean credentialsNonExpired,
-                   @JsonProperty("accountNonLocked") boolean accountNonLocked,
-                   @JsonProperty("authorities") Collection<? extends GrantedAuthority> authorities, @JsonProperty("salt") String salt,
-                   @JsonProperty("code") String code,
-                   @JsonProperty("dealerCodeList") Set<String> dealerCodeList,
-                   @JsonProperty("orgDealerList") List<OrgDealerDto> orgDealerList,
-                   @JsonProperty("orgCode") String orgCode, @JsonProperty("orgName") String orgName,
-                   @JsonProperty("orgLevelCode") String orgLevelCode,
-                   @JsonProperty("dealerList") List<Dealer> dealerList) {
+	public LoginUser(@JsonProperty("id") Long id, @JsonProperty("username") String username,
+					 @JsonProperty("deptId") Long deptId, @JsonProperty("phone") String phone,
+					 @JsonProperty("avatar") String avatar, @JsonProperty("nickname") String nickname,
+					 @JsonProperty("name") String name, @JsonProperty("email") String email,
+					 @JsonProperty("tenantId") Long tenantId, @JsonProperty("password") String password,
+					 @JsonProperty("enabled") boolean enabled, @JsonProperty("accountNonExpired") boolean accountNonExpired,
+					 @JsonProperty("userType") String userType,
+					 @JsonProperty("credentialsNonExpired") boolean credentialsNonExpired,
+					 @JsonProperty("accountNonLocked") boolean accountNonLocked,
+					 @JsonProperty("authorities") Collection<? extends GrantedAuthority> authorities, @JsonProperty("salt") String salt,
+					 @JsonProperty("code") String code,
+					 @JsonProperty("dealerCodeList") Set<String> dealerCodeList,
+					 @JsonProperty("orgDealerList") List<OrgDealerDto> orgDealerList,
+					 @JsonProperty("orgCode") String orgCode, @JsonProperty("orgName") String orgName,
+					 @JsonProperty("orgLevelCode") String orgLevelCode,
+					 @JsonProperty("dealerList") List<Dealer> dealerList) {
 		super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, authorities);
 		this.id = id;
 		this.deptId = deptId;

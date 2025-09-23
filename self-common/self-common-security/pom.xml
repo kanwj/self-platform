@@ -42,7 +42,7 @@
 <!--        </dependency>-->
 
         <dependency>
-            <groupId>com.ultimate</groupId>
+            <groupId>com.ultimate.self.common.core</groupId>
             <artifactId>self-common-core</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>

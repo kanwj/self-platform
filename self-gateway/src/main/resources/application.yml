@@ -1,24 +1,63 @@
-server:
-  port: 3000
 spring:
   application:
     name: self-gateway
-  cloud:
-    nacos:
-      username: nacos
-      password: nacos
-      discovery:
-        server-addr: 127.0.0.1:8848
-        #server-addr: ${NACOS_HOST:sfa-register}:${NACOS_PORT:8848}
-        namespace: 99ee4cc1-6b73-4715-b9bf-c0225bc109d4
-        group: DEFAULT_GROUP
-      config:
-        server-addr: ${spring.cloud.nacos.discovery.server-addr}
-        namespace: 99ee4cc1-6b73-4715-b9bf-c0225bc109d4
-        file-extension: yml
-        group: DEFAULT_GROUP
+
+  profiles:
+    active: local
+
+  codec:
+    max-in-memory-size: 10MB # 调整缓冲区大小https://gitee.com/zhijiantianya/yudao-cloud/pulls/176
+
+  # Jackson 配置项
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true # 设置 LocalDateTime 的格式，使用时间戳
+      write-date-timestamps-as-nanoseconds: false # 设置不使用 nanoseconds 的格式。例如说 1611460870.401，而是直接 1611460870401
+      write-durations-as-timestamps: true # 设置 Duration 的格式，使用时间戳
+      fail-on-empty-beans: false # 允许序列化无属性的 Bean
+
+  main:
+    allow-circular-references: true # 允许循环依赖，因为项目是三层架构，无法避免这个情况。
+
   config:
     import:
-      - optional:nacos:application-${spring.cloud.nacos.config.namespace}.yml
-      - optional:nacos:${spring.application.name}-dev.yml
+      - optional:classpath:application-${spring.profiles.active}.yaml # 加载【本地】配置
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.yaml # 加载【Nacos】的配置
 
+  cloud:
+    # Spring Cloud Gateway 配置项，对应 GatewayProperties 类
+    gateway:
+      # 路由配置项，对应 RouteDefinition 数组
+      routes:
+        ## system-server 服务
+        - id: system-admin-api # 路由的编号
+          uri: grayLb://self-upms
+          predicates: # 断言，作为路由的匹配条件，对应 RouteDefinition 数组
+            - Path=/admin-api/upms/**
+          filters:
+            - RewritePath=/admin-api/upms/v3/api-docs, /v3/api-docs # 配置，保证转发到 /v3/api-docs
+
+      x-forwarded:
+        prefix-enabled: false # 避免 Swagger 重复带上额外的 /admin-api/system 前缀
+
+server:
+  port: 58080
+
+logging:
+  file:
+    name: ${user.home}/logs/${spring.application.name}.log # 日志文件名，全路径
+
+knife4j:
+  # 聚合 Swagger 文档，参考 https://doc.xiaominfo.com/docs/action/springcloud-gateway 文档
+  gateway:
+    enabled: true
+    routes:
+      - name: self-upms
+        service-name: self-upms
+        url: /admin-api/upms/v3/api-docs
+
+--- #################### 芋道相关配置 ####################
+
+yudao:
+  info:
+    version: 1.0.0

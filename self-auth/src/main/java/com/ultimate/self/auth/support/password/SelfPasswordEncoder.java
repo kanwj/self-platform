@@ -4,9 +4,9 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.spring.SpringUtil;
 import com.alibaba.fastjson.JSONObject;
 import com.ultimate.self.common.core.util.WebUtils;
+import com.ultimate.self.common.security.service.LoginUser;
 import com.ultimate.self.common.security.service.SelfUserDetailsService;
-import com.ultimate.self.common.security.service.SfaUser;
-import com.ultimate.self.common.security.util.MD5Util;
+import com.ultimate.self.common.security.core.util.MD5Util;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.Ordered;
@@ -89,10 +89,10 @@ public class SelfPasswordEncoder implements PasswordEncoder {
         }catch (Exception ex) {
             throw new InternalAuthenticationServiceException(ex.getMessage(), ex);
         }
-        SfaUser sfaUser = (SfaUser) userDetails;
+        LoginUser loginUser = (LoginUser) userDetails;
 
-        String salt = sfaUser.getSalt();
-        String encodedPassword = sfaUser.getPassword();
+        String salt = loginUser.getSalt();
+        String encodedPassword = loginUser.getPassword();
         log.info("----------salt:{},encodedPassword:{}",salt,encodedPassword);
         // 2. 使用输入的明文+随机盐 继续加密
         String text = rawPassword + BIG_BRACKETS_LEFT + salt + BIG_BRACKETS_RIGHT;

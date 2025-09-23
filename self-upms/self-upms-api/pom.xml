@@ -30,16 +30,22 @@
             <version>2.2.22</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-extension</artifactId>
-            <version>3.5.6</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-extension</artifactId>-->
+<!--            <version>3.5.14</version>-->
+<!--        </dependency>-->
         <!--字段审计注解-->
         <dependency>
             <groupId>org.javers</groupId>
             <artifactId>javers-core</artifactId>
             <version>6.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ultimate.common.tenant</groupId>
+            <artifactId>self-common-tenant</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

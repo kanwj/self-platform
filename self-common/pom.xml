@@ -20,6 +20,7 @@
         <module>self-common-core</module>
         <module>self-common-swagger</module>
         <module>self-common-mybatis</module>
+        <module>self-common-tenant</module>
     </modules>
 
     <properties>

@@ -1,14 +1,11 @@
 package com.ultimate.self.auth.config;
 
-import com.ultimate.self.auth.support.core.FormIdentityLoginConfigurer;
 import com.ultimate.self.auth.support.core.SelfDaoAuthenticationProvider;
 import com.ultimate.self.auth.support.handler.SelfAuthenticationFailureEventHandler;
 import com.ultimate.self.auth.support.handler.SelfAuthenticationSuccessEventHandler;
-//import com.ultimate.self.auth.support.password.OAuth2ResourceOwnerPasswordAuthenticationProvider;
 import com.ultimate.self.common.core.config.CommonConstantsConfig;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,7 +13,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.server.authorization.OAuth2AuthorizationService;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
-import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
 import org.springframework.security.web.DefaultSecurityFilterChain;
 import org.springframework.security.web.SecurityFilterChain;
 

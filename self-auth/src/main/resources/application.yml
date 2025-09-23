@@ -1,5 +1,5 @@
 server:
-  port: 2000
+  port: 58082
 spring:
   application:
     name: self-auth

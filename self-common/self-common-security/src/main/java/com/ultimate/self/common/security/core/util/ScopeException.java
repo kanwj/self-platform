@@ -1,4 +1,4 @@
-package com.ultimate.self.common.security.util;
+package com.ultimate.self.common.security.core.util;
 
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.OAuth2Error;

@@ -9,7 +9,8 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>self-common-data</artifactId>
+    <groupId>com.ultimate.common.tenant</groupId>
+    <artifactId>self-common-tenant</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,29 +19,16 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.ultimate.self.common.core</groupId>
-            <artifactId>self-common-core</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>transmittable-thread-local</artifactId>
-            <version>2.12.6</version>
-        </dependency>
-        <dependency>
-            <groupId>com.ultimate.self.common.core</groupId>
-            <artifactId>self-common-core</artifactId>
+            <groupId>com.ultimate.mybatis</groupId>
+            <artifactId>self-common-mybatis</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
 
 </project>

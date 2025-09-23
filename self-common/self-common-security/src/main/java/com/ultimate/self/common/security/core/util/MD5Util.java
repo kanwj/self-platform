@@ -1,4 +1,4 @@
-package com.ultimate.self.common.security.util;
+package com.ultimate.self.common.security.core.util;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

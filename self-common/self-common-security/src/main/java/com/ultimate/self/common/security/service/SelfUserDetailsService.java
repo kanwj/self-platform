@@ -94,7 +94,7 @@ public interface SelfUserDetailsService extends UserDetailsService, Ordered {
 		SysUser user = info.getSysUser();
 		// 构造security用户
 
-		return new SfaUser(user.getUserId(), user.getUsername(), user.getDeptId(), user.getPhone(), user.getAvatar(),
+		return new LoginUser(user.getUserId(), user.getUsername(), user.getDeptId(), user.getPhone(), user.getAvatar(),
 				user.getNickname(), user.getName(), user.getEmail(), user.getTenantId(),
 				SecurityConstants.BCRYPT + user.getPassword(), true, true, UserTypeEnum.TOB.getStatus(), true,
 				!CommonConstants.STATUS_LOCK.equals(user.getLockFlag()), authorities,user.getSalt(),null,
@@ -103,11 +103,11 @@ public interface SelfUserDetailsService extends UserDetailsService, Ordered {
 
 	/**
 	 * 通过用户实体查询
-	 * @param sfaUser user
+	 * @param loginUser user
 	 * @return
 	 */
-	default UserDetails loadUserByUser(SfaUser sfaUser) {
-		return this.loadUserByUsername(sfaUser.getUsername());
+	default UserDetails loadUserByUser(LoginUser loginUser) {
+		return this.loadUserByUsername(loginUser.getUsername());
 	}
 
 }
