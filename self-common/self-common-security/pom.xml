@@ -4,15 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ultimate</groupId>
+        <groupId>com.ultimate.cloud</groupId>
         <artifactId>self-common</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>com.self.common</groupId>
     <artifactId>self-common-security</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
+        <spring.authorization.version>0.4.1</spring.authorization.version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,27 +43,27 @@
 <!--        </dependency>-->
 
         <dependency>
-            <groupId>com.ultimate.self.common.core</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-core</artifactId>
-            <version>1.0.0</version>
+            <version>${version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultimate</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-data</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.upms.api</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-upms-api</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.org.api</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-org-api</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -73,6 +74,12 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ultimate.cloud</groupId>
+            <artifactId>self-common-web</artifactId>
+            <version>${revision}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

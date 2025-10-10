@@ -4,12 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ultimate</groupId>
+        <groupId>com.ultimate.cloud</groupId>
         <artifactId>self-upms</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>com.ultimate.upms.api</groupId>
     <artifactId>self-upms-api</artifactId>
 
     <properties>
@@ -42,9 +41,15 @@
             <version>6.10.0</version>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.common.tenant</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-tenant</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ultimate.cloud</groupId>
+            <artifactId>self-common-core</artifactId>
+            <version>2025.09-jdk8-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

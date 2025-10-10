@@ -11,6 +11,7 @@ import com.ultimate.upms.biz.service.AdminUserService;
 import com.ultimate.upms.biz.service.MenuService;
 import com.ultimate.upms.biz.service.PermissionService;
 import com.ultimate.upms.biz.service.RoleService;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -46,6 +47,7 @@ public class AuthController {
     private RoleService roleService;
 
     @RequestMapping("/getPermissionInfo")
+    @Operation(summary = "获取登录用户的权限信息")
     public R getPermissionInfo(){
         //1.1 获取用户信息
         AdminUserDO user = adminUserService.getUserById(getLoginUserId());
@@ -68,4 +70,5 @@ public class AuthController {
 
         return R.ok(AuthConvert.INSTANCE.convert(user, roleList, menuList));
     }
+
 }

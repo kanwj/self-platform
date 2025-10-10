@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ultimate</groupId>
+        <groupId>com.ultimate.cloud</groupId>
         <artifactId>self_platform</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
     <artifactId>self-common</artifactId>
@@ -21,6 +21,7 @@
         <module>self-common-swagger</module>
         <module>self-common-mybatis</module>
         <module>self-common-tenant</module>
+        <module>self-common-web</module>
     </modules>
 
     <properties>
@@ -30,12 +31,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>${redis.version}</version>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>

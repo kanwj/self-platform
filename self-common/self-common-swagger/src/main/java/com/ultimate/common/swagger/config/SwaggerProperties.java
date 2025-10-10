@@ -10,7 +10,7 @@ import javax.validation.constraints.NotEmpty;
  * 作者：kanwj
  * 日期：2025/3/13 10:47
  */
-@ConfigurationProperties("self.swagger")
+@ConfigurationProperties("yudao.swagger")
 @Data
 public class SwaggerProperties {
 

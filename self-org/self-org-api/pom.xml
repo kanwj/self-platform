@@ -4,12 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ultimate.org</groupId>
+        <groupId>com.ultimate.cloud</groupId>
         <artifactId>self-org</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>com.ultimate.org.api</groupId>
     <artifactId>self-org-api</artifactId>
 
     <properties>
@@ -37,9 +36,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.self.common.core</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-core</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -49,9 +48,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.mybatis</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-mybatis</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -67,9 +66,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.self.common.core</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-core</artifactId>
-            <version>1.0.0</version>
+            <version>${revision}</version>
             <scope>compile</scope>
         </dependency>
 

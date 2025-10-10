@@ -1,6 +1,7 @@
 package com.ultimate.eureka;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * 描述：启动类

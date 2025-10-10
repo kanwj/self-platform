@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ultimate</groupId>
+        <groupId>com.ultimate.cloud</groupId>
         <artifactId>self_platform</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>com.ultimate.auth</groupId>
     <artifactId>self-auth</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
 <!--        <dependency>-->
@@ -29,9 +29,9 @@
             <version>1.2.2.1-jre17</version>
         </dependency>
         <dependency>
-            <groupId>com.self.common</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-security</artifactId>
-            <version>1.0.0</version>
+            <version>${version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -69,9 +69,9 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.ultimate.self.common.core</groupId>
+            <groupId>com.ultimate.cloud</groupId>
             <artifactId>self-common-core</artifactId>
-            <version>1.0.0</version>
+            <version>${version}</version>
         </dependency>
     </dependencies>
 </project>
