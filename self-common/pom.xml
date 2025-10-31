@@ -22,6 +22,7 @@
         <module>self-common-mybatis</module>
         <module>self-common-tenant</module>
         <module>self-common-web</module>
+        <module>self-framework</module>
     </modules>
 
     <properties>

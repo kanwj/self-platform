@@ -5,16 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ultimate.cloud</groupId>
-        <artifactId>self_platform</artifactId>
+        <artifactId>self-common</artifactId>
         <version>${revision}</version>
     </parent>
 
-    <artifactId>self-upms</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>self-upms-biz</module>
-        <module>self-upms-api</module>
-    </modules>
+    <artifactId>self-framework</artifactId>
+    <packaging>jar</packaging>
+
+    <name>${project.artifactId}</name>
+    <description>定义基础 pojo 类、枚举、工具类等等</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -24,9 +23,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.2.3</version>  <!-- 请使用最新版本 -->
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.60</version>
         </dependency>
     </dependencies>
 

@@ -1,4 +1,4 @@
-package com.ultimate.upms.biz.controller;
+package com.ultimate.upms.biz.controller.admin;
 
 import org.apache.poi.xwpf.usermodel.*;
 

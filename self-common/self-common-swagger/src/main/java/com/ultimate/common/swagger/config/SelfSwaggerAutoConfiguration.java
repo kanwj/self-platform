@@ -1,5 +1,6 @@
 package com.ultimate.common.swagger.config;
 
+import com.github.xiaoymin.knife4j.spring.configuration.Knife4jAutoConfiguration;
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
@@ -39,7 +40,7 @@ import com.ultimate.self.common.core.constant.CommonConstants;
  *
  * @author 芋道源码
  */
-@AutoConfiguration
+@AutoConfiguration(before = Knife4jAutoConfiguration.class)
 @ConditionalOnClass({OpenAPI.class})
 @EnableConfigurationProperties(SwaggerProperties.class)
 @ConditionalOnProperty(prefix = "springdoc.api-docs", name = "enabled", havingValue = "true", matchIfMissing = true) // 设置为 false 时，禁用

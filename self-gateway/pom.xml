@@ -56,6 +56,12 @@
             <artifactId>knife4j-gateway-spring-boot-starter</artifactId>
             <version>4.5.0</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.ultimate.cloud</groupId>-->
+<!--            <artifactId>self-common-security</artifactId>-->
+<!--            <version>2025.09-jdk8-SNAPSHOT</version>-->
+<!--            <scope>compile</scope>-->
+<!--        </dependency>-->
     </dependencies>
 
 </project>

@@ -24,8 +24,6 @@ public class SecurityConfiguration {
                 registry.requestMatchers("/v3/api-docs/**").permitAll()
                         .requestMatchers("/webjars/**").permitAll()
                         .requestMatchers("/swagger-ui").permitAll()
-                        .requestMatchers("/doc").permitAll()
-                        .requestMatchers("/doc/**").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll();
                 // Druid 监控
                 registry.requestMatchers("/druid/**").permitAll();

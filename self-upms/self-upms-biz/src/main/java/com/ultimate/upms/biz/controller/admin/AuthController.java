@@ -1,4 +1,4 @@
-package com.ultimate.upms.biz.controller;
+package com.ultimate.upms.biz.controller.admin;
 
 import cn.hutool.core.collection.CollUtil;
 import com.ultimate.self.common.core.enums.CommonStatusEnum;
@@ -14,6 +14,7 @@ import com.ultimate.upms.biz.service.RoleService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -46,7 +47,7 @@ public class AuthController {
     @Autowired
     private RoleService roleService;
 
-    @RequestMapping("/getPermissionInfo")
+    @GetMapping("/getPermissionInfo")
     @Operation(summary = "获取登录用户的权限信息")
     public R getPermissionInfo(){
         //1.1 获取用户信息
