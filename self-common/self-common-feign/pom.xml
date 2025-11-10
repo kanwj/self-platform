@@ -4,37 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.ultimate</groupId>
+        <groupId>com.ultimate.cloud</groupId>
         <artifactId>self-common</artifactId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
     </parent>
 
-    <groupId>com.ultimate.common.feign</groupId>
     <artifactId>self-common-feign</artifactId>
+    <packaging>jar</packaging>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
     <dependencies>
-        <!--feign 依赖-->
+        <!-- RPC 远程调用相关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-            <version>4.1.2</version>
-        </dependency>
-        <!-- okhttp 扩展 -->
-        <dependency>
-            <groupId>io.github.openfeign</groupId>
-            <artifactId>feign-okhttp</artifactId>
-            <version>13.3</version>
-        </dependency>
-        <!-- LB 扩展 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-            <version>4.1.3</version>
+            <artifactId>spring-cloud-openfeign-core</artifactId>
+            <!--            <scope>provided</scope> &lt;!&ndash; 设置为 provided，主要是 api 包使用到 &ndash;&gt;-->
         </dependency>
     </dependencies>
 

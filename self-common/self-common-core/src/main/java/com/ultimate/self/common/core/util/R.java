@@ -1,6 +1,6 @@
 package com.ultimate.self.common.core.util;
 
-import com.ultimate.self.common.core.constant.CommonConstants;
+import com.ultimate.self.common.framework.constant.CommonConstants;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import lombok.experimental.Accessors;

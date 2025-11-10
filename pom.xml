@@ -10,7 +10,8 @@
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
-    <description>个人平台</description>
+    <description>个人平台项目基础脚手架</description>
+    <url> https://github.com/kanwj/self-platform.git</url>
 
     <modules>
         <module>self-auth</module>

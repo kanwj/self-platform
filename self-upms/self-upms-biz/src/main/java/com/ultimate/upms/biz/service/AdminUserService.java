@@ -15,4 +15,11 @@ public interface AdminUserService {
      * @return
      */
     AdminUserDO getUserById(Long id);
+
+    /**
+     * 通过用户名查询用户
+     * @param username
+     * @return
+     */
+    AdminUserDO getUserByUserName(String username);
 }

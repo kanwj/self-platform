@@ -3,7 +3,7 @@ package com.ultimate.org.api.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.ultimate.mybatis.handler.CharToBooleanTypeHandler;
+import com.ultimate.self.common.mybatis.handler.CharToBooleanTypeHandler;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 import org.apache.ibatis.type.JdbcType;

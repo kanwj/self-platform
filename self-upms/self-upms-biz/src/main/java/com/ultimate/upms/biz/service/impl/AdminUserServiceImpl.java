@@ -1,5 +1,6 @@
 package com.ultimate.upms.biz.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ultimate.upms.api.dataobject.AdminUserDO;
 import com.ultimate.upms.biz.mapper.AdminUserMapper;
 import com.ultimate.upms.biz.service.AdminUserService;
@@ -22,5 +23,10 @@ public class AdminUserServiceImpl implements AdminUserService {
     @Override
     public AdminUserDO getUserById(Long id) {
         return adminUserMapper.selectById(id);
+    }
+
+    @Override
+    public AdminUserDO getUserByUserName(String username) {
+        return adminUserMapper.selectOne(new QueryWrapper<AdminUserDO>().eq("username", username));
     }
 }

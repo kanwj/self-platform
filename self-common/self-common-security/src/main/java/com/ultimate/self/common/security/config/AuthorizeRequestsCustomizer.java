@@ -1,6 +1,6 @@
 package com.ultimate.self.common.security.config;
 
-import com.ultimate.common.web.config.WebProperties;
+import com.ultimate.self.common.web.config.WebProperties;
 import org.springframework.core.Ordered;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

@@ -1,6 +1,6 @@
 package com.ultimate.upms.biz.mapper;
 
-import com.ultimate.mybatis.core.mapper.BaseMapperX;
+import com.ultimate.self.common.mybatis.core.mapper.BaseMapperX;
 import com.ultimate.upms.api.dataobject.RoleDo;
 import org.apache.ibatis.annotations.Mapper;
 

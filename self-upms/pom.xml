@@ -28,6 +28,11 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.3</version>  <!-- 请使用最新版本 -->
         </dependency>
+        <dependency>
+            <groupId>com.ultimate.cloud</groupId>
+            <artifactId>self-common-feign</artifactId>
+            <version>${revision}</version>
+        </dependency>
     </dependencies>
 
 </project>

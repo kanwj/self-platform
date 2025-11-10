@@ -17,11 +17,11 @@
 package com.ultimate.self.common.security.service;
 
 import cn.hutool.core.util.ArrayUtil;
-import com.ultimate.self.common.core.constant.CommonConstants;
 import com.ultimate.self.common.core.constant.SecurityConstants;
 import com.ultimate.self.common.core.constant.enums.UserTypeEnum;
 import com.ultimate.self.common.core.util.R;
 import com.ultimate.self.common.core.util.RetOps;
+import com.ultimate.self.common.framework.constant.CommonConstants;
 import com.ultimate.upms.api.dto.UserInfo;
 import com.ultimate.upms.api.entity.SysUser;
 import org.springframework.core.Ordered;

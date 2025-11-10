@@ -46,9 +46,9 @@ public interface ServiceNameConstants {
 	String APP_SERVER = "sfa-app-server-biz";
 
 	/**
-	 * sfa-org服务
+	 * self-upms服务
 	 */
-	String ADMIN_SERVER = "sfa-org";
+	String ADMIN_SERVER = "self-upms";
 
 	/**
 	 * sfa-customer服务

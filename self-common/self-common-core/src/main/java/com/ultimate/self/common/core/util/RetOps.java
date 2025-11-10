@@ -20,7 +20,7 @@
 package com.ultimate.self.common.core.util;
 
 import cn.hutool.core.util.ObjectUtil;
-import com.ultimate.self.common.core.constant.CommonConstants;
+import com.ultimate.self.common.framework.constant.CommonConstants;
 
 import java.util.Arrays;
 import java.util.Objects;

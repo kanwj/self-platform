@@ -25,6 +25,8 @@
         <hutool-5.version>5.8.40</hutool-5.version>
         <fastjson.version>1.2.83</fastjson.version>
         <guava.version>33.4.8-jre</guava.version>
+        <lombok.version>1.18.38</lombok.version>
+        <redisson.version>3.51.0</redisson.version>
     </properties>
 
     <dependencyManagement>
@@ -67,6 +69,11 @@
             </dependency>
             <!-- 工具类相关 -->
             <dependency>
+                <groupId>com.ultimate.cloud</groupId>
+                <artifactId>self-framework</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool-5.version}</version>
@@ -80,6 +87,32 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-actuator</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.redisson</groupId>
+                        <!-- 使用 redisson-spring-data-27 替代，解决 Tuple NoClassDefFoundError 报错 -->
+                        <artifactId>redisson-spring-data-35</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-data-27</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

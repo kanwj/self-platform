@@ -3,7 +3,7 @@ package com.ultimate.upms.api.dataobject;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.ultimate.common.tenant.core.db.TenantBaseDO;
+import com.ultimate.self.common.tenant.core.db.TenantBaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
