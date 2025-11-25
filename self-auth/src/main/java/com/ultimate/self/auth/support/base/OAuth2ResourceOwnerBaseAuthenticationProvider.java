@@ -3,6 +3,7 @@ package com.ultimate.self.auth.support.base;
 import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.extra.spring.SpringUtil;
 import com.ultimate.self.common.core.exception.LoginErrorException;
+import com.ultimate.self.common.framework.constant.CommonConstants;
 import com.ultimate.self.common.security.service.SfaRedisOAuth2AuthorizationService;
 import com.ultimate.self.common.security.core.util.OAuth2ErrorCodesExpand;
 import com.ultimate.self.common.security.core.util.ScopeException;
