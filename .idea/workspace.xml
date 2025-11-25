@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063618dc-af39-450a-9337-2bf5f2d7a0d4" name="Changes" comment="初始化修改">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self-zuul/src/main/java/com/ultimate/zuul/controller/TestController.java" afterDir="false" />
+    <list default="true" id="063618dc-af39-450a-9337-2bf5f2d7a0d4" name="Changes" comment="[add]2025/11/10：代碼提交">
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/config/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/config/AuthorizationServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-auth/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-org/self-org-biz/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/self-org/self-org-biz/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-zuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-zuul/src/main/java/com/ultimate/zuul/ZuulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-zuul/src/main/java/com/ultimate/zuul/ZuulApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/self-zuul/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/base/OAuth2ResourceOwnerBaseAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/base/OAuth2ResourceOwnerBaseAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-swagger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-org/self-org-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-upms/self-upms-api/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +29,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -66,13 +64,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "Application.SelfAdminApplication.executor": "Debug",
     "Application.TestController.executor": "Run",
+    "Application.com.ultimate.self.common.framework.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Maven.self-auth [clean].executor": "Run",
     "Maven.self-auth [install].executor": "Run",
+    "Maven.self-common [clean].executor": "Run",
+    "Maven.self-common [compile].executor": "Run",
+    "Maven.self-framework [compile].executor": "Run",
     "Maven.self_platform [clean].executor": "Run",
     "Maven.self_platform [install].executor": "Run",
+    "Maven.self_platform [package].executor": "Run",
     "Notification.DisplayName-DoNotAsk-Lombok plugin": "Lombok integration problem",
     "Notification.DoNotAsk-Lombok plugin": "true",
     "Repository.Attach.Annotations": "false",
@@ -85,6 +89,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.SelfAdminApplication.executor": "Debug",
     "Spring Boot.SelfAuthApplication (1).executor": "Debug",
     "Spring Boot.SelfAuthApplication.executor": "Debug",
     "Spring Boot.SelfOrgApplication.executor": "Debug",
@@ -92,18 +97,18 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/kanwj/selfworkspace/self_platform/self-gateway/src/main/resources",
+    "last_opened_file_path": "C:/kanwj/selfworkspace/self_platform/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/exception",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/kanwj/selfworkspace/self_platform/self-gateway/src/main/java/com/ultimate/gateway/Main.java",
-    "project.structure.last.edited": "Modules",
+    "onboarding.tips.debug.path": "C:/kanwj/selfworkspace/self_platform/self-common/self-common-redis/src/main/java/com/ultimate/cloud/Main.java",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.52873564",
+    "project.structure.side.proportion": "0.6793103",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -115,21 +120,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-framework\src\main\java\com\ultimate\self\common\framework\exception" />
+      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-web\src\main\resources\META-INF\spring" />
+      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-swagger\src\main\resources" />
       <recent name="C:\kanwj\selfworkspace\self_platform\self-gateway\src\main\resources" />
       <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-swagger\src\main\java\com\ultimate\common\swagger\config" />
-      <recent name="C:\kanwj\selfworkspace\self_platform\sfa-org\sfa-org-biz\src\main\resources" />
-      <recent name="C:\kanwj\selfworkspace\self_platform\self-zuul\src\main\resources" />
-      <recent name="C:\kanwj\selfworkspace\self_platform\self-eureka\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-swagger\src\main\resources\META-INF" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.self.auth.support.handler" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ultimate.gateway" />
-      <recent name="com.ultimate.self.common.security.component" />
-      <recent name="com.ultimate.self.auth.utils" />
-      <recent name="com.ultimate.self.common.security.util" />
-      <recent name="com.ultimate.self.auth.support.password" />
+      <recent name="com.ultimate.self.common.framework.exception" />
+      <recent name="com.ultimate.self.common.framework.pojo" />
+      <recent name="com.ultimate.self.common.framework.exception.enums" />
+      <recent name="com.ultimate.self.common.framework.constant" />
+      <recent name="com.ultimate.self.common.redis.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -142,13 +150,26 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="TestController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ultimate.zuul.controller.TestController" />
-      <module name="self-zuul" />
+  <component name="RunManager" selected="Spring Boot.SelfAdminApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ultimate.common.framework.Main" />
+      <module name="self-framework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ultimate.zuul.controller.*" />
+          <option name="PATTERN" value="com.ultimate.common.framework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ultimate.self.common.framework.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ultimate.self.common.framework.Main" />
+      <module name="self-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ultimate.self.common.framework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,25 +190,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelfAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="self-auth" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ultimate.self.auth.SelfAuthApplication" />
+    <configuration name="SelfAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="self-upms-biz" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ultimate.upms.biz.SelfAdminApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ultimate.self.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelfOrgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="self-org-biz" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ultimate.org.biz.SelfOrgApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ultimate.org.biz.*" />
+          <option name="PATTERN" value="com.ultimate.upms.biz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SelfAdminApplication" />
+        <item itemvalue="Application.com.ultimate.self.common.framework.Main" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Spring Boot.ZuulApplication" />
-        <item itemvalue="Spring Boot.SelfOrgApplication" />
-        <item itemvalue="Application.TestController" />
-        <item itemvalue="Spring Boot.SelfAuthApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -257,6 +265,19 @@
       <workItem from="1740993998887" duration="9315000" />
       <workItem from="1741570489366" duration="7431000" />
       <workItem from="1741597268562" duration="61696000" />
+      <workItem from="1759023632214" duration="25602000" />
+      <workItem from="1760061975164" duration="20950000" />
+      <workItem from="1760427048215" duration="23443000" />
+      <workItem from="1760930894152" duration="942000" />
+      <workItem from="1761633708412" duration="23547000" />
+      <workItem from="1762133567917" duration="29072000" />
+      <workItem from="1762327839934" duration="92000" />
+      <workItem from="1762328029566" duration="13847000" />
+      <workItem from="1762742136049" duration="4595000" />
+      <workItem from="1762759691310" duration="5007000" />
+      <workItem from="1763084202409" duration="6460000" />
+      <workItem from="1763105862724" duration="6098000" />
+      <workItem from="1763968084898" duration="4430000" />
     </task>
     <task id="LOCAL-00001" summary="初始化修改">
       <option name="closed" value="true" />
@@ -266,7 +287,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742174272574</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化修改">
+      <option name="closed" value="true" />
+      <created>1760081016150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760081016150</updated>
+    </task>
+    <task id="LOCAL-00003" summary="[add]swagger自动配置：@AutoConfiguration类需要在 META-INF 中声明">
+      <option name="closed" value="true" />
+      <created>1760145684639</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760145684639</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[add]swagger自动配置：配置swagger页面展示接口信息">
+      <option name="closed" value="true" />
+      <created>1761894088048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761894088048</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[add]2025/11/10：代碼提交">
+      <option name="closed" value="true" />
+      <created>1762761473611</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762761473611</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,8 +337,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="[add]系统管理：系统管理初始化提交" />
+    <MESSAGE value="[add]common模块：公共代码提交" />
     <MESSAGE value="初始化修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化修改" />
+    <MESSAGE value="[add]swagger自动配置：@AutoConfiguration类需要在 META-INF 中声明" />
+    <MESSAGE value="[add]swagger自动配置：配置swagger页面展示接口信息" />
+    <MESSAGE value="[add]2025/11/10：代碼提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]2025/11/10：代碼提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -321,9 +379,19 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/self-common/self-common-swagger/src/main/java/com/ultimate/common/swagger/config/SelfSwaggerAutoConfiguration.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/self-dependencies/src/main/java/com/ultimate/common/tenant/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/controller/admin/AuthController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/self-common/self-common-redis/src/main/java/com/ultimate/self/common/redis/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.AbstractMethodError" package="java.lang" />
