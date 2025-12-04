@@ -1,6 +1,6 @@
 package com.ultimate.self.common.security.core.util;
 
-import com.ultimate.self.common.security.service.LoginUser;
+import com.ultimate.self.common.security.core.service.LoginUser;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;

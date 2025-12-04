@@ -1,1 +1,2 @@
 com.ultimate.self.common.web.config.SelfWebAutoConfiguration
+com.ultimate.self.common.swagger.config.SelfSwaggerAutoConfiguration

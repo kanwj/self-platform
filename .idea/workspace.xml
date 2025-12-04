@@ -4,16 +4,121 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="063618dc-af39-450a-9337-2bf5f2d7a0d4" name="Changes" comment="[add]2025/11/10：代碼提交">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="063618dc-af39-450a-9337-2bf5f2d7a0d4" name="Changes" comment="[add]2025/11/25：代码提交">
+      <change afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/config/SecurityProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/config/SelfWebSecurityConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/dao/SelfDaoAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/password/SelfPasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/util/AESUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/util/collection/CollectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-system/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/controller/admin/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/self-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/config/AuthorizationServerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/config/AuthorizationServerConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/base/OAuth2ResourceOwnerBaseAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/base/OAuth2ResourceOwnerBaseAuthenticationProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-swagger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/core/SelfDaoAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/core/SelfDaoAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/password/SelfPasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-auth/src/main/java/com/ultimate/self/auth/support/password/SelfPasswordEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/config/CommonConstantsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/constant/CommonConstantsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/constant/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/constant/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/constant/ServiceNameConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/constant/enums/UserTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/enums/UserTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/enums/CommonStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/enums/RpcConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/constant/RpcConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/exception/LoginErrorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/exception/LoginErrorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/ClassUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/util/cls/ClassUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/CommonResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/KeyStrResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/RetOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/util/ops/RetOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/WebUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/util/web/WebUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/collection/CollectionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-core/src/main/java/com/ultimate/self/common/core/util/object/BeanUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-data/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-data/src/main/java/com/ultimate/self/common/data/cache/RedisTemplateConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-data/src/main/java/com/ultimate/self/common/data/resolver/TenantKeyStrResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-data/src/main/java/com/ultimate/self/common/data/tenant/TenantContextHolder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-data/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-mybatis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-mybatis/src/main/java/com/ultimate/self/common/mybatis/core/dataobject/BaseDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-mybatis/src/main/java/com/ultimate/self/common/mybatis/core/dataobject/BaseDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/component/SelfSecurityMessageSourceConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/util/SecurityFrameworkUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/util/SecurityFrameworkUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/service/LoginUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/service/LoginUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/service/SelfToQUserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/service/SelfToQUserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/service/SelfUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/service/SelfUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/service/SfaRedisOAuth2AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/service/SfaRedisOAuth2AuthorizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/src/main/java/com/ultimate/self/common/swagger/config/Knife4jOpenApiCustomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-web/src/main/java/com/ultimate/self/common/swagger/config/Knife4jOpenApiCustomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/src/main/java/com/ultimate/self/common/swagger/config/SelfSwaggerAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-web/src/main/java/com/ultimate/self/common/swagger/config/SelfSwaggerAutoConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/src/main/java/com/ultimate/self/common/swagger/config/SwaggerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-web/src/main/java/com/ultimate/self/common/swagger/config/SwaggerProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-swagger/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-tenant/src/main/java/com/ultimate/self/common/tenant/core/db/TenantBaseDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-tenant/src/main/java/com/ultimate/self/common/tenant/core/db/TenantBaseDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-web/src/main/java/com/ultimate/self/common/web/config/WebProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-web/src/main/java/com/ultimate/self/common/web/config/WebProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-common-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-common-web/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/self-common/self-framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-org/self-org-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-upms/self-upms-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/pojo/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/pojo/CommonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/constans/SmsSendConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/dto/OrgDealerDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/dto/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/dto/UserOrgDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/dto/UserQry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/entity/Dealer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-api/src/main/java/com/ultimate/org/api/fegin/RemoteQiaUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-biz/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-biz/src/main/java/com/ultimate/org/biz/SelfOrgApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-biz/src/main/java/com/ultimate/org/biz/controller/BlogController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-org/self-org-biz/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/dataobject/AdminUserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/dataobject/AdminUserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/dataobject/MenuDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/dataobject/MenuDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/dataobject/RoleDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/dataobject/RoleDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/dataobject/RoleMenuDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/dataobject/RoleMenuDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/dataobject/UserRoleDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/dataobject/UserRoleDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/dto/UserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/entity/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/enums/ApiConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/enums/ApiConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/enums/MenuTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/enums/MenuTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/feign/RemoteUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/feign/RemoteUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-api/src/main/java/com/ultimate/upms/api/vo/AuthPermissionInfoRespVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-api/src/main/java/com/ultimate/upms/api/vo/AuthPermissionInfoRespVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/SelfAdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/SelfAdminApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/controller/admin/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/controller/admin/auth/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/controller/admin/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/controller/admin/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/convert/AuthConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/convert/AuthConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/framework/security/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/framework/security/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/mapper/AdminUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/mapper/AdminUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/mapper/RoleMenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/mapper/RoleMenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/mapper/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/mapper/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/AdminUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/AdminUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/PermissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/PermissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/impl/AdminUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/impl/PermissionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/impl/PermissionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/upms/biz/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/resources/application-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/resources/application-local.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-upms/self-upms-biz/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/self-system/self-system-biz/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-zuul/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-zuul/src/main/java/com/ultimate/zuul/ZuulApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-zuul/src/main/java/com/ultimate/zuul/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/self-zuul/src/main/resources/application.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +128,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -75,6 +182,7 @@
     "Maven.self-common [compile].executor": "Run",
     "Maven.self-framework [compile].executor": "Run",
     "Maven.self_platform [clean].executor": "Run",
+    "Maven.self_platform [compile].executor": "Run",
     "Maven.self_platform [install].executor": "Run",
     "Maven.self_platform [package].executor": "Run",
     "Notification.DisplayName-DoNotAsk-Lombok plugin": "Lombok integration problem",
@@ -97,18 +205,18 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/kanwj/selfworkspace/self_platform/self-common/self-framework/src/main/java/com/ultimate/self/common/framework/exception",
+    "last_opened_file_path": "C:/kanwj/selfworkspace/self_platform",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/kanwj/selfworkspace/self_platform/self-common/self-common-redis/src/main/java/com/ultimate/cloud/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.6793103",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "editing.templates",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -120,11 +228,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\kanwj\selfworkspace\self_platform" />
+      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-framework\src\main\java\com\ultimate\self\common\framework\util\json" />
+      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-web\src\main\java\com\ultimate\self\common\swagger\config" />
       <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-framework\src\main\java\com\ultimate\self\common\framework\exception" />
       <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-web\src\main\resources\META-INF\spring" />
-      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-swagger\src\main\resources" />
-      <recent name="C:\kanwj\selfworkspace\self_platform\self-gateway\src\main\resources" />
-      <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-swagger\src\main\java\com\ultimate\common\swagger\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\kanwj\selfworkspace\self_platform\self-common\self-common-swagger\src\main\resources\META-INF" />
@@ -133,11 +241,11 @@
       <recent name="com.self.auth.support.handler" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ultimate.self.common.framework.exception" />
-      <recent name="com.ultimate.self.common.framework.pojo" />
-      <recent name="com.ultimate.self.common.framework.exception.enums" />
-      <recent name="com.ultimate.self.common.framework.constant" />
-      <recent name="com.ultimate.self.common.redis.config" />
+      <recent name="com.ultimate.upms.api.vo" />
+      <recent name="com.ultimate.upms.biz.mapper" />
+      <recent name="com.ultimate.upms.api.dataobject" />
+      <recent name="com.ultimate.self.common.framework.util.json" />
+      <recent name="com.ultimate.upms.biz.framework.redis.oauth2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -191,7 +299,7 @@
       </method>
     </configuration>
     <configuration name="SelfAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="self-upms-biz" />
+      <module name="self-system-biz" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ultimate.upms.biz.SelfAdminApplication" />
       <extension name="coverage">
         <pattern>
@@ -277,7 +385,9 @@
       <workItem from="1762759691310" duration="5007000" />
       <workItem from="1763084202409" duration="6460000" />
       <workItem from="1763105862724" duration="6098000" />
-      <workItem from="1763968084898" duration="4430000" />
+      <workItem from="1763968084898" duration="21715000" />
+      <workItem from="1764139931655" duration="29423000" />
+      <workItem from="1764551440116" duration="42081000" />
     </task>
     <task id="LOCAL-00001" summary="初始化修改">
       <option name="closed" value="true" />
@@ -319,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762761473611</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[add]2025/11/25：代码提交">
+      <option name="closed" value="true" />
+      <created>1764034849370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764034849370</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +461,8 @@
     <MESSAGE value="[add]swagger自动配置：@AutoConfiguration类需要在 META-INF 中声明" />
     <MESSAGE value="[add]swagger自动配置：配置swagger页面展示接口信息" />
     <MESSAGE value="[add]2025/11/10：代碼提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add]2025/11/10：代碼提交" />
+    <MESSAGE value="[add]2025/11/25：代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add]2025/11/25：代码提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -364,12 +483,12 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/self-upms/src/main/java/com/ultimate/Main.java</url>
+          <url>file://$PROJECT_DIR$/self-system/src/main/java/com/ultimate/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/Main.java</url>
+          <url>file://$PROJECT_DIR$/self-system/self-system-biz/src/main/java/com/ultimate/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -384,14 +503,19 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/self-upms/self-upms-biz/src/main/java/com/ultimate/upms/biz/controller/admin/AuthController.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/self-common/self-common-redis/src/main/java/com/ultimate/self/common/redis/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/util/SecurityFrameworkUtils.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/self-common/self-common-security/src/main/java/com/ultimate/self/common/security/core/util/SecurityFrameworkUtils.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <breakpoint type="java-exception">
           <properties class="java.lang.AbstractMethodError" package="java.lang" />

@@ -14,9 +14,6 @@
 
     <modules>
         <module>self-common-security</module>
-        <module>self-common-data</module>
-        <module>self-common-core</module>
-        <module>self-common-swagger</module>
         <module>self-common-mybatis</module>
         <module>self-common-tenant</module>
         <module>self-common-web</module>

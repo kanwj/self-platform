@@ -14,12 +14,9 @@
     <url> https://github.com/kanwj/self-platform.git</url>
 
     <modules>
-        <module>self-auth</module>
         <module>self-common</module>
-        <module>self-upms</module>
-        <module>self-org</module>
+        <module>self-system</module>
         <module>self-eureka</module>
-        <module>self-zuul</module>
         <module>self-gateway</module>
         <module>self-dependencies</module>
     </modules>

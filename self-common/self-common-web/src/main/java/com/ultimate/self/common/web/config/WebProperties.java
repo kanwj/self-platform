@@ -15,7 +15,7 @@ import javax.validation.constraints.NotNull;
  * 作者：kanwj
  * 日期：2025/9/28 10:03
  */
-@ConfigurationProperties(prefix = "yudao.web")
+@ConfigurationProperties(prefix = "self.web")
 @Validated
 @Data
 @Component

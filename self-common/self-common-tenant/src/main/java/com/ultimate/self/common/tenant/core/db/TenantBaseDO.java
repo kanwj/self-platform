@@ -1,6 +1,6 @@
 package com.ultimate.self.common.tenant.core.db;
 
-import com.ultimate.self.common.mybatis.core.dataobject.BaseDo;
+import com.ultimate.self.common.mybatis.core.dataobject.BaseDO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class TenantBaseDO extends BaseDo {
+public class TenantBaseDO extends BaseDO {
     /**
      * 多租户编号
      */
