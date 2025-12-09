@@ -16,24 +16,9 @@
  */
 package com.ultimate.self.common.security.core.service;
 
-import cn.hutool.core.util.ArrayUtil;
-import com.ultimate.self.common.framework.constant.CommonConstants;
-import com.ultimate.self.common.framework.constant.SecurityConstants;
-import com.ultimate.self.common.framework.enums.UserTypeEnum;
-import com.ultimate.self.common.framework.pojo.CommonResult;
-import com.ultimate.self.common.framework.util.ops.RetOps;
-import com.ultimate.upms.api.entity.SysUser;
 import org.springframework.core.Ordered;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * @author sfa
@@ -57,47 +42,6 @@ public interface SelfUserDetailsService extends UserDetailsService, Ordered {
 	 */
 	default int getOrder() {
 		return 0;
-	}
-
-	/**
-	 * 构建userdetails
-	 * @param result 用户信息
-	 * @return UserDetails
-	 * @throws UsernameNotFoundException
-	 */
-	default UserDetails getUserDetails(CommonResult<UserInfo> result) {
-		// @formatter:off
-		return RetOps.of(result)
-				.getData()
-				.map(this::convertUserDetails)
-				.orElseThrow(() -> new UsernameNotFoundException("用户不存在"));
-		// @formatter:on
-	}
-
-	/**
-	 * UserInfo 转 UserDetails
-	 * @param info
-	 * @return 返回UserDetails对象
-	 */
-	default UserDetails convertUserDetails(UserInfo info) {
-		Set<String> dbAuthsSet = new HashSet<>();
-		if (ArrayUtil.isNotEmpty(info.getRoles())) {
-			// 获取角色
-			Arrays.stream(info.getRoles()).forEach(roleId -> dbAuthsSet.add(SecurityConstants.ROLE + roleId));
-			// 获取资源
-			dbAuthsSet.addAll(Arrays.asList(info.getPermissions()));
-
-		}
-		Collection<? extends GrantedAuthority> authorities = AuthorityUtils
-				.createAuthorityList(dbAuthsSet.toArray(new String[0]));
-		SysUser user = info.getSysUser();
-		// 构造security用户
-
-		return new LoginUser(user.getUserId(), user.getUsername(), user.getDeptId(), user.getPhone(), user.getAvatar(),
-				user.getNickname(), user.getName(), user.getEmail(), user.getTenantId(),
-				SecurityConstants.BCRYPT + user.getPassword(), true, true, UserTypeEnum.TOB.getStatus(), true,
-				!CommonConstants.STATUS_LOCK.equals(user.getLockFlag()), authorities,user.getSalt(),null,
-				null,null, null, null,null, null);
 	}
 
 	/**

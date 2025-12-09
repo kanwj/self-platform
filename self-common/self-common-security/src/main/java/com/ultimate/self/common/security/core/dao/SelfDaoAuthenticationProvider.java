@@ -2,7 +2,6 @@ package com.ultimate.self.common.security.core.dao;
 
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.extra.spring.SpringUtil;
-import com.ultimate.self.common.framework.constant.CommonConstantsConfig;
 import com.ultimate.self.common.framework.constant.SecurityConstants;
 import com.ultimate.self.common.framework.util.AESUtils;
 import com.ultimate.self.common.framework.util.web.WebUtils;
@@ -49,7 +48,7 @@ public class SelfDaoAuthenticationProvider extends AbstractUserDetailsAuthentica
 	private final static BasicAuthenticationConverter basicConvert = new BasicAuthenticationConverter();
 
 	private PasswordEncoder passwordEncoder;
-	private CommonConstantsConfig commonConstantsConfig;
+	private String clientId;
 
 	/**
 	 * The password used to perform {@link PasswordEncoder#matches(CharSequence, String)}
@@ -63,8 +62,8 @@ public class SelfDaoAuthenticationProvider extends AbstractUserDetailsAuthentica
 
 	private UserDetailsPasswordService userDetailsPasswordService;
 
-	public SelfDaoAuthenticationProvider(CommonConstantsConfig commonConstantsConfig) {
-		this.commonConstantsConfig = commonConstantsConfig;
+	public SelfDaoAuthenticationProvider(String clientId) {
+		this.clientId = clientId;
 		setMessageSource(SpringUtil.getBean("securityMessageSource"));
 		setPasswordEncoder(PasswordEncoderFactories.createDelegatingPasswordEncoder());
 	}
@@ -107,7 +106,7 @@ public class SelfDaoAuthenticationProvider extends AbstractUserDetailsAuthentica
 			presentedPassword = authentication.getCredentials().toString();
 		}
 
-		String nacosClientId = commonConstantsConfig.getClientId();
+		String nacosClientId = clientId;
 		//支持自定义密码解密器
 		if (StrUtil.isNotBlank(mode) && mode.equals("sms")) {
 			String phone = WebUtils.getRequest().getParameter("username");

@@ -1,0 +1,3 @@
+com.ultimate.self.common.security.config.SelfWebSecurityConfigurerAdapter
+com.ultimate.self.common.security.config.SelfSecurityAutoConfiguration
+com.ultimate.self.common.security.core.support.SelfSecurityMessageSourceConfiguration

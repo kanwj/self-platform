@@ -4,15 +4,16 @@ import cn.hutool.core.collection.CollUtil;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import com.ultimate.self.common.security.core.dao.SelfDaoAuthenticationProvider;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
+import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -24,7 +25,6 @@ import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfo;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 import org.springframework.web.util.pattern.PathPattern;
-import com.ultimate.self.common.framework.constant.CommonConstantsConfig;
 
 import javax.annotation.Resource;
 import javax.annotation.security.PermitAll;
@@ -36,15 +36,17 @@ import java.util.Set;
 
 import static com.ultimate.self.common.framework.util.collection.CollectionUtils.convertList;
 
-@Configuration
-@RequiredArgsConstructor
-@EnableWebSecurity
+@AutoConfiguration
+@AutoConfigureOrder(-1) // 目的：先于 Spring Security 自动配置，避免一键改包后，org.* 基础包无法生效
+@EnableMethodSecurity(securedEnabled = true)
 public class SelfWebSecurityConfigurerAdapter {
 
-    @Autowired
-    private CommonConstantsConfig commonConstantsConfig;
+    @Value("${sfa.clientId:sfa}")
+    private String clientId;
+
     @Resource
     private SecurityProperties securityProperties;
+
     @Resource
     private AuthenticationEntryPoint authenticationEntryPoint;
 
@@ -66,8 +68,12 @@ public class SelfWebSecurityConfigurerAdapter {
     private ApplicationContext applicationContext;
 
     @Bean
+    public AuthenticationProvider selfDaoAuthenticationProvider() {
+        return new SelfDaoAuthenticationProvider(clientId);
+    }
+
+    @Bean
     public SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity httpSecurity) throws Exception {
-        // 登出
         httpSecurity
                 // 开启跨域
                 .cors(Customizer.withDefaults())
@@ -79,8 +85,7 @@ public class SelfWebSecurityConfigurerAdapter {
                 // 一堆自定义的 Spring Security 处理器
                 .exceptionHandling(c -> c.authenticationEntryPoint(authenticationEntryPoint)
                         .accessDeniedHandler(accessDeniedHandler));
-        // 登录、登录暂时不使用 Spring Security 的拓展点，主要考虑一方面拓展多用户、多种登录方式相对复杂，一方面用户的学习成本较高
-
+        httpSecurity.formLogin(formLogin -> formLogin.loginProcessingUrl("/system/login").permitAll());
         // 获得 @PermitAll 带来的 URL 列表，免登录
         Multimap<HttpMethod, String> permitAllUrls = getPermitAllUrlsFromAnnotations();
         // 设置每个请求的权限
@@ -106,7 +111,7 @@ public class SelfWebSecurityConfigurerAdapter {
                         .dispatcherTypeMatchers(DispatcherType.ASYNC).permitAll() // WebFlux 异步请求，无需认证，目的：SSE 场景
                         .anyRequest().authenticated());
         //注入自定义授权模式实现
-        httpSecurity.authenticationProvider(new SelfDaoAuthenticationProvider(commonConstantsConfig));
+        httpSecurity.authenticationProvider(selfDaoAuthenticationProvider());
         // 添加 Token Filter
         //httpSecurity.addFilterBefore(authenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
         return httpSecurity.build();

@@ -1,26 +1,20 @@
 package com.ultimate.self.common.security.core.service;
 
-import cn.hutool.core.util.ArrayUtil;
-import com.ultimate.self.common.framework.constant.CommonConstantsConfig;
-import com.ultimate.self.common.framework.constant.SecurityConstants;
 import com.ultimate.self.common.framework.pojo.CommonResult;
 import com.ultimate.self.common.framework.util.ops.RetOps;
-import com.ultimate.self.common.framework.util.web.WebUtils;
 import com.ultimate.self.common.security.core.exception.LoginErrorException;
-import com.ultimate.upms.api.dataobject.AdminUserDO;
-import com.ultimate.upms.api.feign.RemoteUserService;
-import com.ultimate.upms.api.vo.RoleSimpleRespVO;
-import com.ultimate.upms.api.vo.UserProfileRespVO;
+import com.ultimate.self.upms.api.feign.RemoteUserService;
+import com.ultimate.self.upms.api.vo.UserProfileRespVO;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
@@ -36,8 +30,8 @@ public class SelfToQUserDetailsServiceImpl implements SelfUserDetailsService {
 	@Autowired
 	private final RemoteUserService remoteUserService;
 
-	@Autowired
-	private CommonConstantsConfig commonConstantsConfig;
+	@Value("${sfa.clientId:sfa}")
+	private String selfClientId;
 
 	// 登录流程使用
 	@Override
@@ -72,8 +66,8 @@ public class SelfToQUserDetailsServiceImpl implements SelfUserDetailsService {
 
 	@Override
 	public boolean support(String clientId, String grantType) {
-		LOGGER.info("-----------个人平台兼容鉴权模式,selfClientId={},requestClientId={}",commonConstantsConfig.getClientId(),clientId);
-		return commonConstantsConfig.getClientId().equals(clientId);
+		LOGGER.info("-----------个人平台兼容鉴权模式,selfClientId={},requestClientId={}",selfClientId,clientId);
+		return selfClientId.equals(clientId);
 	}
 
 	/**
